@@ -27,13 +27,13 @@ class App extends Component {
         if(this.state.active === menu){
           style = `${style} is-active`;
         }
-        return <a className={style}
+        return <button className={style}
         // bind untuk membuat 'menu' bisa diklik ke fungsi 'clicked'
         onClick={this.clicked.bind(this, menu)}
         key = {index}
         >
         Thema {menu}
-        </a>;
+        </button>;
       })  }
       </nav>       
         

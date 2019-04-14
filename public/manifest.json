@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "UTS WEB 3",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -13,23 +13,38 @@
       "type": "image/png"
     },
     {
+      "src": "icon48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
       "src": "icon64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "icon144.png",
-      "sizes": "144x144",
+      "src": "icon72.png",
+      "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "icon192.png",
-      "sizes": "192x192",
+      "src": "icon96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icon128.png",
+      "sizes": "128x128",
       "type": "image/png"
     },
     {
       "src": "icon256.png",
       "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
