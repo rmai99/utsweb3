@@ -7,37 +7,35 @@ class App extends Component {
     super(props);
 
     this.state = {
-        theme: 'Blue',
+      active: 'Blue'
     };
   }
 
-  toggleLight = (e) => {
-    const currentState = this.state.theme;
-    if (currentState == 'Blue'){
-      this.setState({ theme: 'Light' });
-    }else {
-      this.setState({ theme: 'Blue' });
-    }
-  };
-
-
-
+  clicked(menu){
+    this.setState({
+      active : menu,
+    });
+  }
 
   render() {
     return (
       
-      <div id="app" className={this.state.theme + " full"}>
-      
-        <button
-        className="bigButton"
-        onClick={
-          this.toggleLight
-        }
-        >
-        {this.state.theme} Mode
+      <div id="app" className={this.state.active + " background"}>
+        <nav className="nav">{this.props.items.map ((menu, index) => {
+        var style = 'menu';
 
-        </button>
-        
+        if(this.state.active === menu){
+          style = `${style} is-active`;
+        }
+        return <a className={style}
+        // bind untuk membuat 'menu' bisa diklik ke fungsi 'clicked'
+        onClick={this.clicked.bind(this, menu)}
+        key = {index}
+        >
+        Thema {menu}
+        </a>;
+      })  }
+      </nav>       
         
       </div>
     );

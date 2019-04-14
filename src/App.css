@@ -1,3 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a,
+a:visited {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+  width: 500px;
+  margin: 20px auto;
+  max-width: 48em;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+}
+
+.menu {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: background .15s ease-in;
+}
+
+.menu:hover {
+  background: #ddd;
+}
+
+.menu.is-active {
+  background: #ddd;
+}
+
+.info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.selected {
+  margin-left: 5px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: #ddd;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .App {
   text-align: center;
 }
@@ -8,19 +72,10 @@
   pointer-events: none;
 }
 
-.bigButton {
-  padding: 0.5em 0.5em;
-  /* background-color: #b0deeb;
-  border: #818183; */
-  font-size: 1.5em;
-}
 
-.full {
+.background {
   min-height: 100vh;
   min-width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .Light {
@@ -37,7 +92,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
